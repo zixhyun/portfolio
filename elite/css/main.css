@@ -1,0 +1,681 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+body{
+    min-width: 320px;
+}
+
+/* ---------헤더-------- */
+header{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #dde7e9;
+    background:#fff;
+}
+
+header .header_inner{
+    max-width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+header .header_inner h1{
+ float: left;
+ margin-top: 15px;
+}
+
+header .header_inner .gnb{
+    float: right;
+}
+header .header_inner .gnb li{
+    float: left;
+    padding-left: 52px;
+}
+header .header_inner .gnb li:first-child{
+    padding-left: 0;
+}
+header .header_inner .gnb li a{
+    display: block;
+    line-height: 80px;
+    font-size: 18px;
+    color: #262626;
+    font-weight: bold;
+}
+
+/* ----모바일 버튼 및 모바일 메뉴------ */
+header .header_inner .m_btn{
+    display: none;
+}
+header .header_inner .m_gnb{
+    display: none;
+}
+
+/* ------슬라이드----- */
+
+main .visual .slick-slide img{
+    width: 100%;
+}
+
+main .visual .slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    background:url("../images/btn_left.png") no-repeat;
+    width: 25px;height: 49px;
+    z-index: 1;
+    text-indent: -99999px;
+    border: none;
+    cursor: pointer;
+}
+main .visual .slick-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../images/btn_right.png')no-repeat;
+    width: 25px; height: 49px;
+    z-index: 1;
+    text-indent: -99999px;
+    border: none;
+    cursor: pointer;
+    right: 25px
+}
+
+main .visual .slick-dots{
+    display: none;
+}
+
+/* ------search---------- */
+
+main .search{
+    width: 100%;
+    height: 60px;
+    background: #ff8c97;
+    margin-top: -2px;
+}
+
+main .search .search_inner{
+width: 1000px;
+height: 60px;
+margin: 0 auto;
+}
+main .search .search_inner h2{
+    float: left;
+    width: 16%;
+    margin-top: 15px;
+}
+
+main .search .search_inner .search_area{
+    float: left;
+    margin-left: 1%;
+    width: 39%;
+}
+main .search .search_inner .search_area h2{
+    float: left;
+    margin-top: 20px
+}
+
+main .search .search_inner .search_area .area_wrap{
+    float: left;
+    width: 80%;
+    padding-top: 8px;
+}
+
+main .search .search_inner .search_area .area_wrap select{
+    width: 150px;
+    height: 38px;
+    background: #fff url("../images/arrow_on.png")no-repeat 95% center;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-indent: 5px;
+}
+
+main .search .search_inner .search_school{
+    width: 42%;
+    float: right;
+}
+
+main .search .search_inner .search_school h2{
+    float: left;
+    margin-top: 20px;
+}
+
+main .search .search_inner .search_school .school_wrap{
+    float: left;
+}
+
+main .search .search_inner .search_school .school_wrap input{
+    width: 238px;
+    height: 38px;
+    border: none;
+    background: #fff;
+    outline: none;
+    margin-top: 8px;
+    text-indent: 10px;
+}
+
+main .search .search_inner .search_school .school_wrap button{
+width: 100px;
+height: 38px;
+background: #fed681;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+
+/* -------setion1------- */
+
+main .section1{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main .section1 .box{
+    float: left;
+    width: 33.3%;
+    margin-top: 50px;
+}
+
+main .section1 .box img{
+    width: 100%;
+}
+
+main .section1 .box p{
+    margin-top: 14px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    color: #777;
+}
+
+/* ------section2---- */
+
+main .section2{
+    max-width: 1000px;
+    margin: 85px auto 0;
+}
+
+main .section2 h2{
+    text-align: center;
+}
+
+main .section2 p{
+text-align: center;
+font-size: 15px;
+color: #777;
+margin-top: 15px;
+}
+
+main .section2 .model_list{
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+main .section2 .model_list li{
+    float: left;
+    width: 25%;
+    margin-top: -2px;
+}
+
+main .section2 .model_list li img{
+    width: 100%;
+}
+
+/* ------secion3-------- */
+
+.section3{
+    max-width: 1000px;
+    margin: 85px auto 0;
+    overflow: hidden;
+}
+
+.section3 h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section3 p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.section3 .notice{
+    float: left;
+    width: 30%;
+}
+
+.section3 .notice .slick-dots{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.section3 .notice .slick-dots li{
+ float: left;
+ margin-left: 10px;
+}
+
+.section3 .notice .slick-dots li button{
+width: 8px; height: 8px;
+background: url("../images/btn_eventSlide_off.png")no-repeat;
+text-indent: -99999px;
+border: none;
+}
+
+.section3 .notice .slick-dots .slick-active button{
+ background: url("../images/btn_eventSlide_on.png") no-repeat;
+}
+
+
+.section3 .video{
+    float: right;
+    width: 68%;
+}
+
+.section3 .video iframe{
+    width: 100%;
+    height: 406px;
+}
+/* ---------section4-------- */
+
+.section4{
+    max-width: 1000px;
+    border: 2px solid #61c8fb;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.section4 h2{
+    float: left;
+    background: #61c8fb;
+    padding: 0 20px;
+}
+
+.section4 .sns_list{
+    float: right; 
+}
+
+.section4 .sns_list li{
+    float: left;
+    width: 16%;
+    margin-top: 15px;
+}
+
+.section4 .sns_list li img{
+    width: 100%;
+}
+
+/* -----footer------ */
+footer{
+    width: 100%;
+    background: #f5f3f4;
+    height: 133px;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+footer .footer_inner{
+    max-width: 1000px;
+    height: 133px;
+    margin: 0 auto;
+}
+
+footer .footer_inner .util{
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+footer .footer_inner .util li{
+    float: left;
+    padding: 0 10px;
+    position: relative;
+}
+
+footer .footer_inner .util li::before{
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .footer_inner .util li:first-child::before{
+    display: none;
+}
+
+footer .footer_inner .util li:first-child{
+    padding-left: 0;
+}
+
+footer .footer_inner .util li a{ 
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer .footer_inner address{
+    padding-top: 18px;
+    font-size: 12px;
+    color: #888;
+    line-height: 18px; 
+}
+
+footer .footer_inner address .show{
+    display: none;
+}
+
+
+footer .footer_inner .copy{
+    padding-top: 15px;
+}
+
+footer .btn_top{
+    position: absolute;
+    margin-top: 38px;
+    right: 2%;
+}
+
+/* ---------------모바일버젼--------------- */
+@media screen and (max-width:767px){
+/* --------header----------- */
+    .cover{
+        position: fixed;
+        left: 0;top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        z-index: 99;
+        display: none;
+    }
+
+    header .header_inner{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        position: relative;
+    }
+
+    header .header_inner h1 {
+        margin-top: 10px;
+        float: none;
+    }
+
+    .header_inner .gnb{
+        display: none;
+    }
+
+    header .header_inner .m_btn{
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+/* -----------모바일 메뉴------------------- */
+    header .header_inner .m_gnb{
+
+        display: block;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        left: 0;top: 0;
+        background: #fff;
+        z-index: 100;
+        left: -100%;
+    }
+
+    header .header_inner .m_gnb img{
+        width: 100%;
+    }
+
+    header .header_inner .m_gnb .m_menu{
+        text-align: left;
+        margin-top: 1px;
+    }
+
+    header .header_inner .m_gnb .m_menu li{
+        height: 40px;
+        border-bottom: 1px solid #e2e2e2e2;
+        background: url('../images/m_menu_bg.png') no-repeat 12px center;
+    }
+    header .header_inner .m_gnb .m_menu li h2{
+        background: #ff8b97;
+        color: #fff;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 10px;
+    }
+
+    header .header_inner .m_gnb .m_menu li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        color: #757575;
+        margin-left: 26px;
+        font-size: 13px;
+    }
+
+    /* -----------모바일 슬라이드 페이지 버튼------------- */
+
+    main .visual {
+        position: relative;
+    }
+
+    main .visual .slick-dots{
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+    main .visual .slick-dots li{
+        float: left;
+        margin-right: 15px;
+    }
+    main .visual .slick-dots li:last-child{
+        margin-right: 0;
+    }
+    
+    main .visual .slick-dots li button{
+        width: 18px; height: 18px;
+        background: url("../images/main_dots.png")no-repeat;
+        text-indent: -99999px;
+        border: none;
+    }
+
+    main .visual .slick-dots .slick-active button{
+        background: url("../images/main_dots_1.png")no-repeat;
+    }
+
+/* ---------------모바일 매장검색부분--------------- */
+    main .search{
+        width: 100%;
+        height: 120px;
+        padding: 9px;   
+    }
+
+    main .search .search_inner .search_store{
+        float:none;
+        width: 100%;
+        clear: both;
+        margin-top: 0;
+    }
+
+    main .search .search_inner .search_area{
+        clear: both;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main .search .search_inner .search_area .area_wrap{
+        margin-left: -10%;
+        
+    }
+    main .search .search_inner .search_area .area_wrap select{
+        width: 25%
+    }
+
+    /* ------------school----------- */
+    main .search .search_inner .search_school{
+        clear: both;
+        width: 100%;        
+    }
+    
+    main .search .search_inner .search_school .school_wrap{
+        margin-left: -10%;
+    }
+
+
+main .search .search_inner .search_school .school_wrap button{
+    width: 158px;
+    }
+
+/* -----------------secton1------------- */
+main .section1{
+    width: 100%;
+    margin-top: 40px;
+}
+
+main .section1 .box{
+    width: 100%;
+    margin-top: 0;
+}
+
+main .section1 .box:nth-child(2){
+    margin: 15px 0;
+}
+
+main .section1 .box p{
+    display: none;
+}
+/* ---------------secton2------------------ */
+
+main .section2{
+    width: 100%;
+    padding: 0 8px;
+    margin-top: 50px;
+}
+
+main .section2 h2 img{
+    width: 110px;
+    height: 25px;
+}
+
+main .section2 p{
+    display: none;
+}
+
+main .section2 .model_list{
+    margin-top: 15px;
+}
+
+main .section2 .model_list li{
+    width: 50%;
+}
+
+/* -----------secton3------------ */
+.section3{
+    width: 100%;
+    margin-top: 65px;
+}
+
+.section3 h2{
+    margin-bottom: 10px;
+}
+
+.section3 h2 img{
+   
+width: 170px;
+height: 35px;
+}
+
+.section3 p{
+    display: none;
+}
+
+main .section3 .notice{
+    width: 100%;
+    float: none;
+}
+
+main .section3 .notice img{
+    width: 100%;
+}
+
+main .section3 .video{
+    width: 100%;
+    float: none;
+    margin-top: 3px;
+}
+/* ------------section4-------------- */
+.section4{
+    margin-top: 15px;
+}
+.section4  h2{
+width: 100%;
+float: none;
+}
+
+.section4  .sns_list li{
+    text-align: center;
+    width: 33.3%;
+    padding: 0.5% 0;
+
+}
+.section4 .sns_list li img{
+    width: 50%;
+}
+/* -----------footer------------ */
+
+footer .footer_inner{
+    position: relative;
+    height: 176px;
+    width: 100%;
+    text-align: center;
+    background: #f5f3f4;
+}
+
+.btn_top{
+    display: none;
+}
+
+footer .footer_inner .util li {
+    float: none;
+    display: inline-block;
+}
+
+footer .footer_inner address{
+    color: #737373
+}
+
+footer .footer_inner .util .hide{
+    display:none;
+}
+footer .footer_inner address .show{
+    display: block;
+}
+footer .footer_inner .copy{
+    font-size: 10px;
+    color: #737373
+}
+
+
+}
